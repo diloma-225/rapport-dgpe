@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Rapport Annuel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens: {
+                '3xl': {'min': '1920px'},
+                // => @media (min-width: 1920px) { ... }
+
+                '2xl': {'max': '1920px'},
+                // => @media (max-width: 1535px) { ... }
+
+                'xl': {'max': '1279px'},
+                // => @media (max-width: 1279px) { ... }
+
+                'lg': {'max': '1024px'},
+                // => @media (max-width: 1023px) { ... }
+
+                'md': {'max': '900px'},
+                // => @media (max-width: 767px) { ... }
+
+                'sm': {'max': '639px'},
+                // => @media (max-width: 639px) { ... }
+                'xs': {'max': '414px'},
+                // => @media (max-width: 414px) { ... }
+              },
+            },
+          },
+        };
+    </script>
+</head>
+<body class="pt-10">
+    <div class="fade-box mb-10">
+        <div>
+            <header class="w-4/6 3xl:w-5/6 lg:w-full sm:w-full h-[50vh] lg:h-[35vh] bg-[#D8DFDA] mx-auto rounded-lg relative">
+                <h1 class="hidden w-4/6 sm:w-5/6 text-3xl 3xl:text-[32px] md:text-sm text-center font-medium bg-[#E89E01] p-3 absolute bottom-[-10%] sm:bottom-[-5%] lg:bottom-[-3%] 3xl:bottom-[-3%] left-1/2 transform -translate-x-1/2 uppercase" id="headerTitle">
+                    rapport annuel 2023 - 2024
+                </h1>
+            </header>
+        </div>
+        
+
+        <div class="intro-text w-4/6 3xl:w-3/6 sm:w-5/6 mt-[3%] sm:mt-18 mx-auto">
+            <p class="text-justify">
+<!--                 Ce rapport présente les activités majeures réalisées par la Direction Générale du Portefeuille de l’État (DGPE) au cours de l’année 2023, dans le cadre de la gestion des participations publiques. Il inclut également certaines évolutions enregistrées jusqu’au 30 juin 2024. Il offre une vue d’ensemble sur la situation économique et financière des entreprises du portefeuille de l’État. -->
+
+            Cette page web propose une version allégée et interactive du rapport annuel 2023-2024. Elle met en lumière les principales activités réalisées par la Direction Générale du Portefeuille de l’État (DGPE) au cours de l’exercice 2023 et intègre des données actualisées jusqu’au 30 juin 2024. Vous y découvrirez une perspective globale et dynamique sur la situation économique et financière du portefeuille.
+
+            </p>
+        </div>
+    </div>
+    <div class="w-4/6 sm:w-5/6 3xl:w-3/6 h-auto mx-auto">
+        <h1 class="text-[28px] sm:text-2xl uppercase text-[#0F622C] mb-2">DGPE : ACCélérateur de développemEnt</h1>
+        <div class="hr w-2/6 h-3 sm:h-2 bg-[#0F622C] rounded-xl mb-5"></div>
+
+        <p class="text-justify">
+            Pour la période 2021-2025, la Direction Générale du Portefeuille de l’Etat (DGPE) s’est dotée d’une
+            stratégie de développement quinquennale en vue de poursuivre ses initiatives d’amélioration du
+            suivi de la gestion des entreprises publiques. Celle-ci induit trois grandes dimensions à savoir
+            : (i) Un positionnement institutionnel renforcé, (ii) une stratégie de portefeuille alignée avec les
+            besoins de développement, et (iii) une mise à niveau des capacités internes et des modes de
+            gestion.
+        </p>
+
+        <h2 class="text-xl subtitle-left">les trois (3) grandes dimensions de la stratégie 2021-2025</h2>
+        <div class="triangle-container mb-10 relative">
+            <h2 class="title-toit text-white">
+                Une nouvelle vision : <br>
+                <span class="font-bold">La DGPE, accélérateur de développement</span>
+            </h2>
+            <div class="triangle-up mx-auto">
+            </div>
+           
+            <div class="w-5/6 mx-auto h-2 bg-[#000]"></div>
+            <div class="w-5/6 mx-auto h-2 bg-[#000]"></div>
+
+            <div class="floors">
+                <div class="floor1 mb-2 w-5/6 h-32 bg-[#D6CFC7] flex flex-col justify-center mx-auto sm:pb-2">
+                    <h2 class="text-white text-center font-bold uppercase">un positionnement institutionnel renforcé</h2>
+                    <div class="w-ful px-3 h-3/6 flex justify-around gap-3">
+                        <div class="w-3/6 bg-white rounded-md h-full flex items-center justify-center text-center">
+                            Missions & Prérogatives renforcées
+                        </div>
+                        <div class="w-3/6 bg-white rounded-md h-full flex items-center justify-center text-center">
+                            Evolution ciblée du périmètre
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="floor2 my-2 w-5/6 h-32 lg:h-auto sm:h-0 bg-[#FF6F00] flex flex-col justify-center mx-auto pt-3 sm:pb-2">
+                    <h2 class="text-white text-center font-bold uppercase sm:text-md">une stratégie de portefeuille alignée avec les besoins de développement</h2>
+                    <div class="w-ful px-3 h-4/6 flex md:flex-wrap justify-around gap-3 sm:justify-left md:gap-1">
+                        <div class="bg-white rounded-md h-full flex items-center justify-center text-center md:w-full">
+                            Investissement dans les actifs stratégiques
+                        </div>
+                        <div class="bg-white rounded-md h-full flex items-center justify-center text-center md:w-full">
+                            Nouvelles activités catalysantes
+                        </div>
+                        <div class="bg-white rounded-md h-full flex items-center justify-center text-center md:w-full">
+                            Optimisation de la performance
+                        </div>
+                        <div class="bg-white rounded-md h-full flex items-center justify-center text-center md:w-full">
+                            Désengagement actifs non stratégiques
+                        </div>
+                        <div class="bg-white rounded-md h-full flex items-center justify-center text-center md:w-full">
+                            Synergies inter-entité
+                        </div>
+                    </div>
+                </div>
+                <div class="floor3 mt-2 w-5/6 h-32 md:h-auto bg-[#A3B1C6] flex flex-col justify-center mx-auto pt-3 sm:pb-2">
+                    <h2 class="text-white text-center font-bold uppercase sm:text-md">une mise à niveau des capacités internes et des modes de gestion</h2>
+                    <div class="w-ful px-3 h-4/6 flex md:flex-wrap justify-around gap-3">
+                        <div class="bg-white rounded-md h-full flex items-center justify-center text-center md:w-full md:py-2">
+                            Gouvernance
+                        </div>
+                        <div class="bg-white rounded-md h-full flex items-center justify-center text-center md:w-full md:py-2">
+                            Pilotage & gestion des entités sectorielles
+                        </div>
+                        <div class="bg-white rounded-md h-full flex items-center justify-center text-center md:w-full md:py-2">
+                            Organisation & Capacités internes
+                        </div>
+                        <div class="bg-white rounded-md h-full flex items-center justify-center text-center md:w-full md:py-2">
+                            Opérationnalisation des implications juridiques
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-5/6 mx-auto h-2 bg-[#000]"></div>
+            <div class="w-5/6 mx-auto h-2 bg-[#000]"></div>
+           
+        </div>
+        <!-- <img src="./images/MS.png" class="mb-10" alt=""> -->
+        <h2 class="text-xl subtitle-right">un portefeuille diversifié présent dans tous les secteurs</h2>
+        <div class="mt-5">
+            <div id="container3" style="width:auto; height:400px;"></div>
+        </div>
+        <div>
+            <p class="text-justify">
+                Au 31 décembre 2023, le portefeuille de l’Etat est constitué de 87 sociétés tout comme en 2022. L’année 2023 a vu la création de la Société Ivoirienne de Transformation Agricole (SOCITA) et la sortie la Banque Populaire de Côte d’Ivoire (BPCI) du portefeuille de l’Etat.
+            </p>
+        </div>
+    </div>
+
+    <div class=" w-4/6 sm:w-5/6 3xl:w-3/6 h-auto mx-auto mt-10">
+        <h1 class="text-[28px] uppercase text-[#0F622C] mb-2">Instauration continue des meilleurs pratiques de gouvernance</h1>
+        <div class="hr w-2/6 h-3 bg-[#0F622C] rounded-xl mb-5"></div>
+    </div>
+    <section class="horizontal">
+        <div class="pin-wrap">
+          <div class="animation-wrap to-right">
+            
+            <div class="item">
+                <h2 class="text-2xl uppercase font-medium text-justify text-[#FF5733]">opérations en capital</h2>
+                <p class="text-justify">
+                    <b style="color: #0F622C;">Cession des parts de l’Etat dans une société</b> <br>
+                    La Banque Populaire de Côte d’Ivoire (BPCI) a été entièrement absorbée par AFG Bank Côte d’Ivoire le 20 décembre 2023.
+                </p>
+                <p class="text-justify">
+                    <b style="color: #0F622C;">Une (1) prise de participation</b><br>
+                    En mars 2023, l’Etat a procédé à la création de la Société Ivoirienne de Transformation Agricole (SOCITA) afin de faciliter la transformation des produits agricoles, notamment les fruits en purée et jus.
+                </p>
+                <p class="text-justify">
+                    <b style="color: #0F622C;">Augmentation de capital</b> <br>
+                    La BHCI a procédé à une augmentation de son capital qui passe de 53,18 milliards FCFA à 83,44 milliards FCFA en 2023.<br>
+                    La société Ivoire Manganèse Mines SA (IMMSA) a procédé, également, à une augmentation de son capital, à hauteur de 2,7 milliards FCFA, passant ainsi de 610 millions FCFA à 3,31 milliards FCFA en 2023.<br>
+                </p>
+                
+            </div>
+            <div class="item">
+                <h2 class="text-2xl uppercase font-medium text-justify text-[#A33F3F]">
+                    suivi de la politique d’endettement des entreprises publiques
+                </h2>
+                <p class="text-justify">
+                    Le suivi de l’endettement des entreprises publiques, encadré par des arrêtés et circulaires, a permis de maîtriser la dette, qui atteignait 2 754 milliards FCFA au 31 décembre 2023 (+2,9 %). CI ENERGIES concentre 60 % de ce montant, suivi du PAA. La dette a financé des projets majeurs : barrages hydro-électriques, réseau électrique, infrastructures portuaires, et autres.
+                </p>
+                <p class="text-justify">
+                    CI ENERGIES fait l’objet de mesures spécifiques pour aligner ses ressources et obligations financières, tandis que le PAA fait face à des risques financiers à moyen terme. Les sociétés FER, SIR, Air CI, ANSUT et SOGEDI sont sous suivi rapproché. Des recommandations ont été formulées pour un endettement soutenable et des actions concrètes attendent validation.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="text-2xl uppercase font-medium text-justify text-[#355C7D]">signature des contrats de performance avec les entreprises publiques</h2>
+                <p class="text-justify">
+                    Afin de poursuivre les efforts d’amélioration de la gouvernance et du fonctionnement des organes sociaux des entreprises publiques, il est apparu opportun de mettre sur pied des mécanismes et outils à l’attention des parties prenantes de la vie des entreprises publiques. 
+                </p>
+                <p class="text-justify">
+                    Il s’agit notamment de la signature de Lettres de mission des Conseils d’Administration et des Directeurs Généraux. Les Lettres de mission ont pour but de fixer les objectifs et actions à réaliser en vue d’atteindre les performances techniques, économiques et financières attendues dans le cadre des missions confiées au Directeur Général. Avec la généralisation du processus en 2023, ce sont 31 Lettres de mission qui ont été signées pour les sociétés : AGEF, AGEROUTE, AIGF, ANADER, ANAH, BNETD, CI-ENERGIES, CML, CNRA, GUCE CI, I2T, INIE, INS-SODE, LBTP, LONACI, OIC, ONAD, ONEP, PAA, PASP, PCI, RTI, SIDT, SIPF, SIVAC, SNDI, SODEFOR, SODEMI, SODEXAM, SONAPIE et VERSUS BANK. 
+                </p>
+                <p class="text-justify">
+                    A terme, la signature des Lettres de missions devrait atteindre un périmètre cible de 52 entreprises publiques.
+                </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Prix de la gouvernance -->
+    <div class="w-4/6 sm:w-5/6 3xl:w-3/6 mx-auto mt-10">
+        <h2 class="text-xl subtitle-left">Prix de la gouvernance </h2>
+        <p class="my-5">
+            La sixième édition du Prix d’Excellence de la gouvernance et de la performance des entreprises publiques a été organisée le mercredi 02 octobre 2024. Cette cérémonie, qui s’inscrit dans le cadre de la promotion de la bonne gouvernance et la culture de la performance au sein desdites entreprises, a permis de distinguer les meilleures entreprises publiques de l’année 2023.
+        </p>
+        <div class='video-wrap w-full'>
+            <video class="rounded-lg shadow-lg" autoplay muted playsinline loop>
+                <source src="./videos/video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    
+    <div class="performance w-4/6 sm:w-5/6 3xl:w-3/6 mx-auto mt-10">
+        <h1 class="text-[28px] uppercase text-[#0F622C] mb-2">performance du portefeuille</h1>
+        <div class="hr2 w-2/6 h-3 bg-[#0F622C] rounded-xl mb-5"></div>
+
+        <h2 class="text-xl subtitle-right">un impact réaffirmé sur le développement et les conditions de vie des populations </h2>
+
+        <p class="text-justify my-5">
+            En 2023, conformément à leurs missions, les entreprises du portefeuille de l’Etat créent des emplois et contribuent fortement au développement des secteurs clés tels que l’agriculture, le transport urbain, le logement, et assure la disponibilité d’infrastructures de qualité dans les secteurs des routes, de l’électricité, de l’eau potable, de l’assainissement, des TIC et des industries.
+        </p>
+        
+        <div class="content-container">
+            <div class="left-content bg-[#0F622C] bg-opacity-20 rounded-lg">
+
+                <video id="video1" class="imageToShow rounded-lg" autoplay muted playsinline loop>
+                        <source src="./videos/Composition1.mp4" type="video/mp4">
+                </video>
+                <img id="img2" class="imageToShow rounded-lg" src="./images/pouring-water.jpg" alt="kitty">
+              
+<!--               <img id="img3" class="imageToShow" src="./images/ANADER.png" alt="kitty"> -->
+                <video id="video2" class="imageToShow rounded-lg" autoplay muted playsinline loop>
+                    <source src="./videos/Composition2.mp4" type="video/mp4">
+                </video>
+                <video id="video3" class="imageToShow rounded-lg" autoplay muted playsinline loop>
+                    <source src="./videos/video2.mp4" type="video/mp4">
+                </video>
+
+              <img id="img5" class="imageToShow rounded-lg" src="./images/RTI_Equipements.png" alt="kitty">
+            </div>
+            
+            <div class="right-content">
+                <p class="contentMarker h-[70vh] mb-10 flex flex-col items-center justify-center" data-marker-content="video1">
+                    <b>Au niveau du secteur de l’électricité,</b> les travaux d’investissement réalisés par CI-ENERGIES se chiffrent à 232 milliards FCFA en 2023. Ces travaux se répartissent dans les différents segments de la chaîne de valeur du système électrique national, notamment le transport, la distribution urbaine et l’électrification rurale. Ainsi, au niveau du transport et de la distribution urbaine, les capacités ont augmenté respectivement de 1 582 MVA et 239,5 MVA en 2023. En ce qui concerne l’électrification rurale, 625 localités supplémentaires ont été électrifiées en 2023, portant le nombre total des localités électrifiées à 7 508. A cet effet, le taux de couverture nationale s’est établi à 88,1% contre 82,4% en 2022. Quant au taux d’accès à l’électricité, il est passé de 95% en 2022 à 97,2% en 2023.
+                </p>
+              
+                <p class="contentMarker animate h-[70vh] mb-10" data-marker-content="img2">
+                    <b>Dans le secteur de l’eau potable</b>, l’<b>ONEP</b> a achevé cinq (5) projets majeurs inscrits au PND 2021-2025, pour un montant total de 27,2 milliards FCFA. Ces projets incluent (i) le renforcement de l’alimentation en eau potable dans la ville d’Abidjan à partir de l’usine de la Mé, (ii) l’amélioration de l’accès à l’eau potable à l’intérieur du pays, notamment à Bouaké et dans le District des Montagnes, et (iii) l’extension et le renforcement du réseau pour une utilisation optimale des usines de Bonoua 1 et Bonoua 2.
+
+                    Ces réalisations ont permis (i) d’améliorer durablement la desserte en eau potable pour plus de 3 millions de personnes, (ii) de réaliser 347 forages, (iii) d’effectuer plus de 50 000 branchements subventionnés, et (iv) de réduire le taux de panne des Pompes à Motricité Humaine (PMH) en milieu rural, passant de 44 % en 2019 à 10 %.
+                </p>
+              
+                <p class="contentMarker animate h-[70vh] mb-10" data-marker-content="video2">
+                    <b>Sur le plan environnemental</b>, <b>la SODEFOR</b> a procédé, en 2023, au reboisement de 8 719 hectares de forêt et mené des actions de protection des forêts par la conduite de 1 050 missions d’identification et 42 patrouilles de sécurisation, ainsi que l’installation de dix (10) comités de lutte contre les feux de brousse.  
+                </p>
+
+                <p class="contentMarker animate h-[70vh] mb-10" data-marker-content="video3">
+                    <b>En ce qui concerne les travaux d'entretien routier</b>, le Programme d'Entretien Routier (PER) 2023-2025 a été exécuté à 20,84% au 31 décembre 2023, et des marchés d'un montant global de 213,77 milliards FCFA ont été passés. Avec l’exécution des travaux, 3 849,7 kilomètres ont été reprofilés et d'autres activités telles que la surveillance du réseau, la gestion des bacs, le traitement des nids de poules, le curage des caniveaux et la gestion des feux tricolores ont été conduites et devraient s’achever avec la fin du Programme. En somme, le <b>FER</b> a mobilisé des ressources d’un montant global de 511,41 milliards FCFA, qui a servi à financer le PER au cours de l’exercice 2023 et exécuter des travaux sur les routes concédées dont la réfection de la chaussée de la section Gesco-Attinguié de l'autoroute du Nord.
+                </p>
+
+                <p class="contentMarker animate h-[70vh] mb-10" data-marker-content="img5">
+                    <b>En ce qui concerne le secteur des médias</b>, la couverture d’évènements sociaux par la <b>RTI</b>, tels que l'AFRICA CEO FORUM ainsi que la poursuite des campagnes de communication de proximité à l’intérieur du pays par <b>IDT</b> ont permis de sensibiliser les populations aux nouvelles technologies de télédiffusion et d’accroître la couverture télévisuelle de qualité.
+                </p>
+              
+                
+            </div>
+        </div>
+        
+    </div>
+    <!-- Performances financières : amélioration à la fois du chiffre d’affaires et du profit -->
+    <div class="w-4/6 sm:w-5/6 3xl:w-3/6 mx-auto mt-3">
+        <h2 class="text-xl subtitle-left">Une consolidation de la performance économique et financière</h2>
+        <h3 class="text-lg font-bold">Performance globale du portefeuille</h3>
+         <div class="h-auto md:h-auto">
+            <figure class="highcharts-figure" id="container9">
+                <div id="container9"></div>
+            </figure>
+        </div>
+        <div class="flex md:flex-col">
+            <div class="w-3/6 h-auto md:h-auto">
+                <figure class="highcharts-figure" id="container10">
+                    <div id="container10"></div>
+                </figure>
+            </div>
+            <div class="w-3/6 h-auto md:h-auto">
+                <figure class="highcharts-figure" id="container11">
+                    <div id="container11"></div>
+                </figure>
+            </div>
+        </div>
+        <div class="h-auto md:h-auto">
+            <figure class="highcharts-figure" id="container12">
+                <div id="container12"></div>
+            </figure>
+        </div>
+        <div class="mb-10">
+            <ul class="list-disc">
+                <li>Les recettes fiscales et non fiscales générées par le portefeuille de l’Etat sont estimées à 658 milliards FCFA (ce qui représenterait une contribution de 4% au financement du budget de l’Etat au titre de l’exercice 2024) ;</li>
+
+                <li>Ces recettes devraient croître avec la prise en compte des dividendes complémentaires.</li>
+            </ul>
+                     
+        </div>
+
+        <h3 class="text-lg font-bold">Performance des entreprises publiques</h3>
+        <div class="h-auto md:h-auto">
+            <figure class="highcharts-figure" id="container13">
+                <div id="container13"></div>
+            </figure>
+        </div>
+        <div class="flex md:flex-col">
+            <div class="w-3/6 h-auto md:h-auto">
+                <figure class="highcharts-figure" id="container14">
+                    <div id="container14"></div>
+                </figure>
+            </div>
+            <div class="w-3/6 h-auto md:h-auto">
+                <figure class="highcharts-figure" id="container15">
+                    <div id="container15"></div>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+ 
+    <div class="w-4/6 sm:w-5/6 3xl:w-3/6 mx-auto mt-10">
+        <div class="h-auto md:h-auto">
+            <figure class="highcharts-figure">
+                <div id="container16"></div>
+            </figure>
+        </div>
+        <div>
+            <ul class="list-disc">
+                <li>  Les recettes fiscales et non fiscales générées par les entreprises publiques sont estimées à 222 milliards FCFA;</li>
+
+                <li>  Les entreprises publiques ayant distribué des dividendes à l’Etat au titre de l’exercice 2023 sont : BNI (7,2 Mds FCFA), PETROCI (7 Mds FCFA), GUCE (3,4 Mds FCFA), LONACI (2,7 Mds FCFA), SODEMI (340 Mls FCFA), SIR (131 Milliards FCFA).</li>
+            </ul>
+                     
+        </div>
+    </div>
+
+
+    <div class="w-3/6 flex items-center gap-3 my-10 mx-auto">
+        <button class="bg-[#0F622C] p-5 rounded-full border-2 border-[#E89E01]">
+            <img src="./images/arrow-down.svg" class="w-[34px]" alt="">
+        </button>
+        <a href="#" class="underline block">Télécharger la version complète du Rapport Annuel incluant la panorama global ainsi que les fiches entreprise.</a>
+    </div>
+
+
+    <footer class="w-full from-green-200">
+        © 2024 <a href="#" class="mx-2 underline"> DGPE</a>. Tous droits réservés.
+    </footer>
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
