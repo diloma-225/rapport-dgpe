@@ -13,9 +13,14 @@ body{
 }
 header{
   background: url(../images/bg.jpeg);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width:900px)  {
+  body{
+    padding-top: 0 !important;
+  }
 }
 .highcharts-credits{
   display: none;
@@ -186,7 +191,7 @@ h2.subtitle-right{
   .title-toit{
     font-size: .8rem;
     position: absolute;
-    top: 4%;
+    top: 10%;
     left: 50%;
     text-align: center;
     transform: translateX(-50%);
